@@ -44,6 +44,36 @@ button:hover {
   transform: scale(1.05);
 }
 
+.note {
+  background-color: var(--main-bg-color);
+  width: 20rem;
+  height: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.204);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.note h1 {
+  padding-bottom: 1rem;
+}
+
+.noteButtonWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  max-width: 12rem;
+  margin: auto;
+}
+
+.noteContainer {
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
 .hamburgerMenu {
   margin-left: 2rem;
   cursor: pointer;
@@ -57,5 +87,12 @@ button:hover {
   }
   .title {
     padding-bottom: 1rem;
+  }
+
+  .noteContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
   }
 }
