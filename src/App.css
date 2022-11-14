@@ -15,5 +15,47 @@
   background-color: var(--main-bg-color);
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  background-color: var(--blue-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.hamburgerMenu {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    padding-bottom: 1rem;
+  }
 }
