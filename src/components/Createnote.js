@@ -25,7 +25,7 @@ export default function Createnote({notes, setNotes, setShowCreateNote}) {
   return (
     <form onSubmit={handleCreateNote} className='createNote'>
         <input onChange={e => setTitle(e.target.value)} placeholder='Title' />
-        <textarea required onChange={e => setContent(e.target.value)} />
+        <textarea required onChange={e => setContent(e.target.value)} placeholder='Note' />
         <button type='Submit'>Done</button>
     </form>
   )
