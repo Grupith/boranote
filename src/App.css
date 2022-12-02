@@ -99,6 +99,7 @@ button:hover {
   border-radius: 5px;
   font-size: 1.3rem;
   padding: 1rem;
+  resize: none;
 }
 
 .createNote input {
@@ -118,6 +119,15 @@ button:hover {
     padding-bottom: 1rem;
   }
 
+  .noteContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .noteContainer {
     display: grid;
     grid-template-columns: 1fr;
