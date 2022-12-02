@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Navbar setShowCreateNote={setShowCreateNote}/>
       <div className='noteContainer'>
-        {showCreateNote && <Createnote notes={notes} setNotes={setNotes} />}
+        {showCreateNote && <Createnote notes={notes} setNotes={setNotes} setShowCreateNote={setShowCreateNote} />}
         {notes.map((note) => <Note key={note.id} id={note.id} title={note.title} content={note.content}/>)}
       </div>
         
