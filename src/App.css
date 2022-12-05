@@ -112,7 +112,7 @@ button:hover {
 .editNote {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--main-bg-color);
   width: 20rem;
   height: 22rem;
@@ -123,6 +123,31 @@ button:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
+.editNote input {
+  font-size: 1.3rem;
+  padding: .5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.editNote textarea {
+  height: 10rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.editNote span {
+  font-weight: 600;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+
+.editNote span:hover {
+  font-size: 1.1rem;
+}
 
 @media only screen and (max-width: 600px) {
 

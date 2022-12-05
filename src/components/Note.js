@@ -12,11 +12,11 @@ export default function Note({title , content, id, notes, setNotes}) {
 
   return (
     <>
-      {!isEditing ?<div className='note'>
+      {!isEditing ? <div className='note'>
           <h1>{title}</h1>
           <p>{content}</p>
           <div className='noteButtonWrapper'>
-              <button>Edit</button>
+              <button onClick={() => setIsEditing(true)}>Edit</button>
               <button onClick={() => handleDeleteNote(id)}>Delete</button>
           </div>
           
