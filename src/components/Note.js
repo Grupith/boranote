@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
-import EditNote from './EditNote'
+import React from 'react'
 
 export default function Note({title , content, id, notes, setNotes}) {
 
-  const [isEditing, setIsEditing] = useState(false)
 
   const handleDeleteNote = () => {
     const updatedNotes = notes.filter(note => note.id !== id)
@@ -12,15 +10,15 @@ export default function Note({title , content, id, notes, setNotes}) {
 
   return (
     <>
-      {!isEditing ? <div className='note'>
+      <div className='note'>
           <h2>{title}</h2>
           <p>{content}</p>
           <div className='noteButtonWrapper'>
-              <button onClick={() => setIsEditing(true)}>Edit</button>
+              <button>Edit</button>
               <button onClick={() => handleDeleteNote(id)}>Delete</button>
           </div>
           
-      </div> : <EditNote setIsEditing={setIsEditing} title={title} content={content}/>}
+      </div>
     </>
   )
 }
